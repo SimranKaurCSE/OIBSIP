@@ -1,0 +1,357 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #3e2723;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    background-color: #d7a86e;
+    color: #2b1b17;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: #f0c890;
+}
+
+
+/* Common Section */
+
+section {
+    padding: 70px 20px;
+}
+
+
+section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* About */
+
+.about {
+    background-color: #f8f1e7;
+}
+
+
+.section-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.section-content p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* Services */
+
+.services {
+    background-color: white;
+}
+
+
+.service-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.service-card {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #f8f1e7;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+    font-size: 16px;
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    background-color: #eee1d2;
+}
+
+
+.testimonial-container {
+    max-width: 900px;
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.testimonial-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.testimonial-card p {
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    background-color: #f8f1e7;
+}
+
+
+.contact p {
+    font-size: 17px;
+    margin: 8px;
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+
+.social-links a {
+    margin: 0 10px;
+
+    color: #5d4037;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #3e2723;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+footer p {
+    font-size: 15px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    .hero {
+        min-height: 75vh;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    section {
+        padding: 50px 20px;
+    }
+
+
+    section h2 {
+        font-size: 30px;
+    }
+
+}
